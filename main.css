@@ -1,0 +1,267 @@
+body {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.header {
+    background: orange;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+}
+
+.welcome-section {
+    height: 558px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.header__h2 {
+    font-family: "Cinzel", serif;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    justify-content: left;
+    text-shadow: 0 0 10px orange;
+    font-size: 30px;
+}
+
+.welcome-section__h1 {
+    font-family: "Cinzel", serif;
+    color: black;
+    text-shadow: 0 0 10px gray;
+    margin-top: 0;
+    font-size: 60px;
+}
+
+.welcome-section__p {
+    font-family: "Zilla Slab", serif;
+    font-style: italic;
+    margin-top: 0;
+    font-size: 40px;
+    color: rgb(199, 0, 0);
+    text-shadow: 0 0 10px red;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar__ul {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navbar__li {
+    font-family: "Zilla Slab", serif;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px orange;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(199, 0, 0);
+    text-shadow: 0 0 10px red;
+}
+
+.projects {
+    border-top: 3px solid red;
+    flex-direction: column;
+    text-align: center;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects__h2 {
+    font-family: "Cinzel", serif;
+    text-decoration: underline;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 10px gray;
+}
+
+.project__string {
+    flex-direction: column;
+}
+
+.projects__block-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects__block-area__project-block {
+    background-image: url(images/Screenshot_5.png);
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: 20px;
+    border: 5px solid orange;
+}
+
+.project-image {
+    background-size: cover;
+    margin: 0;
+    height: 00px;
+    width: 100px;
+}
+
+.project-name {
+    font-family: "Zilla Slab", serif;
+    font-size: 50px;
+    color: rgba(240, 108, 0);
+    opacity: 0;
+}
+
+.projects__block1:hover {
+    transform: scale(0.9);
+    transition: 2.7s;
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(images/Screenshot_5.png);
+}
+
+.projects__block-area__project-block:hover .project-name {
+    opacity: 1;
+    transition: 0.9s;
+}
+
+.projects__block1 {
+    transition: all 2.7s ease;
+    background-position: top;
+    background-size: cover;
+    background-image: url(images/Screenshot_5.png);
+}
+
+.projects__block2 {
+    transition: all 2.7s ease;
+    background-position: top;
+    background-size: cover;
+    background-image: url(images/Screenshot_6.png);
+}
+
+.projects__block2:hover {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(images/Screenshot_6.png);
+    transform: scale(0.9);
+    transition: 2.7s;
+}
+
+.projects__block3 {
+    transition: all 2.7s ease;
+    background-size: cover;
+    background-position: top;
+    background-image: url(images/Screenshot_7.png);
+}
+
+.projects__block3:hover {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(images/Screenshot_7.png);
+    transform: scale(0.9);
+    transition: all 2.7s ease;
+}
+
+.empty__block {
+    background-color: black;
+    background-position: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+    margin-left: 20px;
+    border: 5px solid orange;
+    transition: .3s;
+}
+
+.empty__block:hover {
+    z-index: -1;
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(images/404.jpg);
+    transform: scale(0.9);
+    transition: all 2.7s ease;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Zilla Slab", serif;
+    letter-spacing: 3px;
+    background: orange;
+    color: rgb(199, 0, 0);
+    text-shadow: 0 0 10px red;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    border: none;
+    transition: .2s;
+}
+
+.button:hover {
+    
+    transform: scale(.9);
+    transition: .4s;
+}
+
+.footer {
+    margin-top: 50px;
+    border-top: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+}
+
+.footer__h2 {
+    font-size: 50px;
+    color: black;
+    text-shadow: 0 0 10px gray;
+}
+
+.footer__p {
+    font-size: 30px;
+    color: rgb(199, 0, 0);
+    text-shadow: 0 0 10px red;
+}
+
+.contacts_area {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact_icon {
+    width: 40px;
+    height: 40px;
+}
+
+.contact_link {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    transition: .3s;
+}
+
+.contact:hover {
+    transform: translateY(10px);
+    transition: .5s;
+}
